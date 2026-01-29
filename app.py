@@ -28,7 +28,7 @@ if uploaded_file and groq_api_key:
     if user_question:
         try:
             # AI Model Setup
-            llm = ChatGroq(groq_api_key=groq_api_key, model_name="mixtral-8x7b-32768")
+            llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.3-70b-versatile")
             
             # Prompt Engineering
             prompt = f"Context: {text[:5000]}\n\nQuestion: {user_question}\n\nAnswer accurately based on the context."
